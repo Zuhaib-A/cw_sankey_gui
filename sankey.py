@@ -1,22 +1,18 @@
-#!/usr/bin/env python3 
-
-#Student Number: 19083919
-
-"""Draw a sankey diagram using data from a given input file.
+"""Draw a sankey diagram using data from a given input file. ###
 """
 import sys
 from ezgraphics import GraphicsWindow
 import random
 import math
 
-WIDTH = 1000        # Width of the window in pixels
-HEIGHT = 700        # Height of the window in pixels
-GAP = 25        # Gap between disagram arrows in pixels
-COLOURS = [(230, 25, 75), (60, 180, 75), (255, 225, 25), (0, 130, 200),
-(245,	130,	48),	(145,	30, 180), (70, 240,	240),	(240, 50, 230),
-(210,	245,	60),	(250,	190, 212), (0, 128,	128),	(220, 190, 255),
-(170, 110, 40), (255, 250, 200), (128, 0, 0), (170, 255, 195),
-(128,	128,	0), (255, 215, 180), (0, 0, 128), (128, 128, 128)]
+WIDTH = 1000        # Width of the window in pixels #####
+HEIGHT = 700        # Height of the window in pixels #####
+GAP = 25        # Gap between disagram arrows in pixels #####
+COLOURS = [(230, 25, 75), (60, 180, 75), (255, 225, 25), (0, 130, 200), ###
+(245,	130,	48),	(145,	30, 180), (70, 240,	240),	(240, 50, 230), ###
+(210,	245,	60),	(250,	190, 212), (0, 128,	128),	(220, 190, 255), ###
+(170, 110, 40), (255, 250, 200), (128, 0, 0), (170, 255, 195), ###
+(128,	128,	0), (255, 215, 180), (0, 0, 128), (128, 128, 128)] ###
 
 def read_file(file_name):
     """Opens and reads the file. Returns the title, left-hand axis label and 
